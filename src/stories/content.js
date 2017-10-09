@@ -2,12 +2,14 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import StoryRouter from 'storybook-router';
+import { action } from '@storybook/addon-actions';
 
 import Content from '../components/Content';
 import Status from '../components/Status';
 import Logo from '../components/Logo';
 import TopBarWrapper from '../components/TopBarWrapper';
 import HeaderLink from '../components/HeaderLink';
+import Compose from '../components/Compose';
 
 storiesOf('Content', module).add('...', () => <Content>Some Content</Content>);
 
@@ -42,3 +44,6 @@ storiesOf('TopBar Components', module)
       <HeaderLink to="/">Letzter Link</HeaderLink>
     </div>
   ));
+
+storiesOf('Compose', module)
+  .add('Form', () => <Compose onSubmit={action('onSubmit')} />)

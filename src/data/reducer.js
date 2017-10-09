@@ -1,11 +1,6 @@
-const initialState = {
-  conferenceTopics: ['react', 'angular', 'html', 'css'],
-};
+import { combineReducers } from 'redux'
+import statusReducer from './status/reducer'
 
-const reducer = (state = initialState, action) => {
-  return state;
-};
-
-export default reducer;
-
-export const getAllConferenceTopics = state => state.data.conferenceTopics;
+export default combineReducers({
+  status: statusReducer
+})
