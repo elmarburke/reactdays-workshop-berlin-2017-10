@@ -1,11 +1,11 @@
 const initialState = {
-  conferenceTopics: ['react', 'angular', 'html', 'css']
-}
+  conferenceTopics: ['react', 'angular', 'html', 'css'],
+};
 
 const reducer = (state = initialState, action) => {
-  return state
-}
+  return state;
+};
 
-export default reducer
+export default reducer;
 
-export const getAllConferenceTopics = (state) => state.data.conferenceTopics
+export const getAllConferenceTopics = state => state.data.conferenceTopics;

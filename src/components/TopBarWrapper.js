@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const TopBarWrapper = styled.header`
   display: flex;
@@ -11,6 +11,6 @@ const TopBarWrapper = styled.header`
   background-color: #292929;
   padding: 1.5em 3em;
   box-sizing: border-box;
-`
+`;
 
-export default TopBarWrapper
+export default TopBarWrapper;
