@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from 'components/Logo';
 import HeaderLink from 'components/HeaderLink';
+import TopBarWrapper from 'components/TopBarWrapper'
 
 class TopBar extends Component {
   render() {
