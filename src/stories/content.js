@@ -8,6 +8,10 @@ import Status from '../components/Status';
 import Logo from '../components/Logo';
 import TopBarWrapper from '../components/TopBarWrapper';
 import HeaderLink from '../components/HeaderLink';
+import Compose from '../components/Compose';
+
+storiesOf('Compose', module)
+  .add('Empty Compose', () => <Compose />)
 
 storiesOf('Content', module).add('...', () => <Content>Some Content</Content>);
 
