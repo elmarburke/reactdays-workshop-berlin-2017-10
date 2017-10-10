@@ -20,7 +20,7 @@ export const fetchStatusById = (id) => ({
 
 export const fetchStatus = () => ({
   type: FETCH_LIST,
-  payload: db.allDocs({include_docs: true})
+  payload: db.allDocs({include_docs: true, descending: true})
     .then(result => result.rows.map(row => row.doc))
 })
 
