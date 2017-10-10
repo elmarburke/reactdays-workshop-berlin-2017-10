@@ -1,4 +1,5 @@
-export const FETCH_LIST = 'data/status/FETCH_LIST'
+export const FETCH_LIST = "data/status/FETCH_LIST";
+export const ADD = "data/status/ADD";
 
 export const fetchStatus = () => ({
   type: FETCH_LIST,
@@ -10,4 +11,9 @@ export const fetchStatus = () => ({
       text: "Cool, pouchdb does cool things"
     }
   ]
+});
+
+export const addStatus = status => ({
+  type: ADD,
+  payload: status
 });

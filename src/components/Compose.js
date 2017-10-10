@@ -3,6 +3,7 @@
 import React from "react";
 import { func } from "prop-types";
 import styled from "styled-components";
+import ContentWrapper from "./Content";
 
 const TextArea = styled.textarea`
   height: 5em;
@@ -22,8 +23,6 @@ const SendButton = styled.button`
   border-radius: 4px;
   cursor: pointer;
 `;
-
-import ContentWrapper from "./Content";
 
 class Compose extends React.Component {
   static propTypes = {

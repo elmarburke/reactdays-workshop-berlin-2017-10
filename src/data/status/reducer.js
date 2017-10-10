@@ -1,4 +1,4 @@
-import { FETCH_LIST } from "./actions";
+import { FETCH_LIST, ADD } from "./actions";
 
 const initialState = { all: [] };
 
@@ -9,6 +9,11 @@ const reducer = (state = initialState, action) => {
         ...state,
         all: action.payload
       };
+    case ADD:
+      return {
+        ...state,
+        all: [action.payload, ...state.all]
+      }
     default:
       return state;
   }
