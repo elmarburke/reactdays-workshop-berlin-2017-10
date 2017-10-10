@@ -55,7 +55,7 @@ export const unsubscribeFromChangesFeed = (feed) => {
 
 export const startReplication = () => ((dispatch, getState) => {
   const sync = db.sync(
-    'http://localhost:5984/micro-status',
+    'http://'+window.location.hostname + ':5984/micro-status',
     {
       live: true,
       retry: true

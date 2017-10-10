@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import configureStore from './configureStore';
 import registerServiceWorker from './registerServiceWorker';
+import { startReplication } from './data/status/actions';
 
 const store = configureStore();
 
@@ -18,3 +19,5 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 registerServiceWorker();
+
+store.dispatch(startReplication())

@@ -12,7 +12,7 @@ import {
 
 class StatusList extends Component {
   static propTypes = {
-    status: arrayOf(Status.propTypes.status).isRequired,
+    statusList: arrayOf(Status.propTypes.status).isRequired,
     fetchStatus: func.isRequired
   };
 
