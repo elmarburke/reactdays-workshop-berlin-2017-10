@@ -2,6 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import StoryRouter from 'storybook-router';
+import { action } from '@storybook/addon-actions';
 
 import Content from '../components/Content';
 import Status from '../components/Status';
@@ -11,7 +12,7 @@ import HeaderLink from '../components/HeaderLink';
 import Compose from '../components/Compose';
 
 storiesOf('Compose', module)
-  .add('Empty Compose', () => <Compose />)
+  .add('Empty Compose', () => <Compose onSubmit={action('onSubmit')} />)
 
 storiesOf('Content', module).add('...', () => <Content>Some Content</Content>);
 
