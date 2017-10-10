@@ -4,7 +4,7 @@ const initialState = { all: [] };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_LIST:
+    case `${FETCH_LIST}_FULFILLED`:
       return {
         ...state,
         all: action.payload
